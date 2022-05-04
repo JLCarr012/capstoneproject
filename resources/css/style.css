@@ -1,7 +1,10 @@
 html, body {
     margin: 0;
 	padding: 0;
+    font-size: 16px;
 }
+
+/*Header*/
 
 header {
     width: 100%;
@@ -17,9 +20,10 @@ header {
     align-items: center;
 }
 
-h2 {
+.logo p {
     font-family: Arial, sans-serif;
     text-align: center;
+    font-size: 20px;
     letter-spacing: -1.5px;
 }
 
@@ -45,18 +49,70 @@ ul {
 }
 
 li {
-    font-size: 16px;
+    font-size: 1.5rem;
     padding: 16px;
     
 }
 
 a {
-    color: black;
     text-decoration: none;
+    color: black;
 }
 
 button {
     background-color: black;
     color: white;
     border-radius: 5px;
+}
+
+/* First Section */
+
+.start {
+    background-color: rgb(199, 199, 199);
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.start img {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    width: 60%;
+
+}
+
+.learn {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn h2 {
+    padding-bottom: 50px;
+}
+
+.learn h3 {
+    padding-bottom: 50px;
+}
+
+.starthere {
+    text-align: center;
+}
+
+span {
+    background-color: black;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: white;
+    padding: 8px 0;
+    font-size: 1.5rem;
+    width: 100%;
 }
