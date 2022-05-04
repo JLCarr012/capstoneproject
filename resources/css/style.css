@@ -6,11 +6,18 @@ html, body {
 
 /*Header*/
 
-header {
+.desktop {
     width: 100%;
     height: 64px;
     display: inline-flex;
     align-items: center;
+}
+
+.desktop nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 24px;
 }
 
 .logo {
@@ -36,22 +43,14 @@ header {
     font-weight: lighter;
 }
 
-nav {
-    width: 100%;
-    display: inline-flex;
-    justify-content: flex-end;
-}
-
-ul {
+.desktop ul {
     display: inline-flex;
     list-style: none;
-    margin-right: 24px;
 }
 
 li {
     font-size: 1.5rem;
     padding: 16px;
-    
 }
 
 a {
@@ -63,6 +62,42 @@ button {
     background-color: black;
     color: white;
     border-radius: 5px;
+}
+
+.mobile {
+    display: none;
+}    
+
+@media screen and (max-width: 750px) {
+    .logo {
+        display: none;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        width: 100%;
+        height: 64px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .mobile nav {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+
+   .mobile img {
+       padding: 0 20px;
+
+   }
 }
 
 /* First Section */
