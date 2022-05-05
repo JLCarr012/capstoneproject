@@ -2,11 +2,15 @@ html, body {
     margin: 0;
 	padding: 0;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Header*/
 
 .desktop {
+    margin: 0 24px;
+    position: fixed;
+    z-index: 100;
     width: 100%;
     height: 64px;
     display: inline-flex;
@@ -14,15 +18,14 @@ html, body {
 }
 
 .desktop nav {
+    margin-right: 24px;
     display: inline-flex;
     width: 100%;
     justify-content: flex-end;
-    margin-right: 24px;
 }
 
 .logo {
     display: inline-flex;
-    margin-left: 24px;
     height: 32px;
     align-items: center;
 }
@@ -49,20 +52,17 @@ html, body {
 }
 
 li {
-    font-size: 1.5rem;
+    font-size: 20px;
     padding: 16px;
 }
 
-a {
+
+
+.desktop a {
     text-decoration: none;
     color: black;
 }
 
-button {
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-}
 
 .mobile {
     display: none;
@@ -70,11 +70,6 @@ button {
 
 @media screen and (max-width: 750px) {
     
-    html, body {
-        margin: 0;
-        padding: 0;
-    }
-
     .logo {
         display: none;
     }
@@ -90,6 +85,8 @@ button {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        position: fixed;
+        z-index: 100;
     }
     .mobile nav {
         width: 100%;
@@ -101,7 +98,7 @@ button {
         overflow: scroll;
     }
 
-     img {
+    .mobile img {
         padding: 0 20px;
     }
 }
@@ -109,10 +106,11 @@ button {
 /* First Section */
 
 .start {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(150, 208, 228);
     align-items: center;
     display: inline-flex;
     width: 100%;
+    margin-top: 64px;
 
 }
 
@@ -121,30 +119,36 @@ h2 {
     font-size: 6rem;
 }
 
+
+
 .start img {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 24px;
+    margin: 32px 24px;
     width: 60%;
 
 }
 
 .learn {
-    margin-left: 24px;
     display: flex;
     flex-direction: column;
 }
 
 .learn h2 {
-    padding-bottom: 50px;
+    font-size: 4vw;
+    padding-bottom: 2rem;
 }
 
 .learn h3 {
-    padding-bottom: 50px;
+    font-size: 2vw;
+    padding-bottom: 2rem;
 }
 
 .starthere {
     text-align: center;
+}
+
+.starthere a {
+    color: white;
+    text-decoration: none;
 }
 
 span {
@@ -154,6 +158,42 @@ span {
     line-height: normal;
     color: white;
     padding: 8px 0;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    
+    .start {
+        background-color: rgb(150, 208, 228);
+        display: inline-flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .start img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .learn {
+        display: flex;
+        flex-direction: column;
+       margin: 32px 16px;
+    }
+
+    .learn h2 {
+        padding-bottom: 2rem;
+        font-size: 11vw;
+    }
+
+    .learn h3 {
+        padding-bottom: 1.5rem;
+        font-size: 5vw;
+    }
+
+    span {
+        font-size: 4vw;
+    }
 }
