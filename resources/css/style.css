@@ -1,20 +1,22 @@
 html, body {
-    margin: 0;
+    margin-right: 0;
 	padding: 0;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 /*Header*/
 
 .desktop {
-    margin: 0 24px;
     position: fixed;
     z-index: 100;
     width: 100%;
     height: 64px;
     display: inline-flex;
     align-items: center;
+    border-bottom: 2px solid black;
+    background-color: white;
 }
 
 .desktop nav {
@@ -25,6 +27,7 @@ html, body {
 }
 
 .logo {
+    margin: 0 24px;
     display: inline-flex;
     height: 32px;
     align-items: center;
@@ -87,6 +90,7 @@ li {
         flex-wrap: nowrap;
         position: fixed;
         z-index: 100;
+        border-bottom: 1px solid black;
     }
     .mobile nav {
         width: 100%;
@@ -104,67 +108,79 @@ li {
 }
 
 /* First Section */
+h2 {
+    font-size: 3vw;
+    text-transform: uppercase;
+}
 
-.start {
+h3 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.5vw;    
+}
+
+.section1 {
     background-color: rgb(150, 208, 228);
     align-items: center;
     display: inline-flex;
+    flex-direction: row;
     width: 100%;
     margin-top: 64px;
-
+    border-bottom: 1.5px solid black;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 6rem;
+.banner {
+    width: 100%;
+    display: inline-flex;
 }
 
-
-
-.start img {
+.banner img {
     margin: 32px 24px;
     width: 60%;
 
 }
 
 .learn {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .learn h2 {
-    font-size: 4vw;
     padding-bottom: 2rem;
 }
 
 .learn h3 {
-    font-size: 2vw;
     padding-bottom: 2rem;
 }
 
-.starthere {
-    text-align: center;
-}
-
-.starthere a {
-    color: white;
-    text-decoration: none;
-}
-
-span {
+.learn p {
     background-color: black;
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
     color: white;
     padding: 8px 0;
-    font-size: 1.5vw;
     width: 100%;
+    text-align: center;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.learn p:hover {
+    box-shadow: 2px 2px 7px black;
+}
+
+.learn a {
+    text-decoration: none;
+    color: white;
 }
 
 @media screen and (max-width: 750px) {
     
-    .start {
+    .section1 {
         background-color: rgb(150, 208, 228);
         display: inline-flex;
         flex-direction: column;
@@ -172,7 +188,13 @@ span {
         width: 100%;
     }
 
-    .start img {
+    .banner {
+        display: inline-flex;
+        flex-direction: column;
+
+    }
+
+    .banner img {
         width: 100%;
         margin: 0;
     }
@@ -180,12 +202,12 @@ span {
     .learn {
         display: flex;
         flex-direction: column;
-       margin: 32px 16px;
+        margin: 32px 16px;
     }
 
     .learn h2 {
         padding-bottom: 2rem;
-        font-size: 11vw;
+        font-size: 9vw;
     }
 
     .learn h3 {
@@ -193,7 +215,120 @@ span {
         font-size: 5vw;
     }
 
-    span {
-        font-size: 4vw;
+    .learn p {
+        font-size: 3vw;
     }
 }
+
+/* Second Section */
+
+.section2 {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: rgb(193, 219, 227);
+}
+
+.practice {
+    width: 60%;
+    margin: 32px 24px;
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 7px black;
+
+}
+
+.practice img {
+    width: 100%;
+    margin-bottom: 32px;
+    border-bottom: 1.5px solid black;
+}
+
+.quote {
+    width: 100%;   
+}
+
+.quote h2 {
+    font-size: 2.5vw;
+    padding-left: 2vw;
+}
+
+.quote p {
+    padding: 1.5rem 2vw;
+}
+
+.quote aside {
+    padding-left: 2vw;
+}
+
+.information {
+    width: 40%;
+    margin-top: 32px;
+    margin-right: 10px;
+    margin-bottom: 32px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 7px black;
+
+}
+
+.information img {
+    height: auto;
+    width: 35%;
+}
+
+.information h3 {
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+.information p {
+    padding-top: 1vw;
+}
+
+.orientation {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.orientation img {
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.date {
+    width: 65%;
+    margin: 0 16px;
+}
+
+.campus {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(150, 208, 228);
+}
+
+.campus img {
+    margin: 16px;
+}
+
+.find {
+    width: 65%;
+    margin-right: 16px;
+}
+
+.lecture {
+    display: inline-flex;
+    align-items: center;
+}
+
+.lecture img {
+    margin: 16px;
+}
+
+.join {
+    width: 65%;
+    margin-right: 16px;
+}
+
