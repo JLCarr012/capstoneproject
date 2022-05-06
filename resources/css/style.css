@@ -301,6 +301,8 @@ p {
 .information img {
     height: auto;
     width: 35%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px black;
 }
 
 .information h3 {
@@ -448,6 +450,7 @@ p {
 
 .section3 {
     background-color: rgb(12, 6, 96);
+    border-bottom: 5px solid white;
 }
 
 .section3 h2 {
@@ -471,6 +474,11 @@ p {
     grid-gap: 32px;
 }
 
+.courses a {
+    text-decoration: none;
+    color: white;
+}
+
 .coursesmobile {
     display: none;
 }
@@ -492,12 +500,14 @@ p {
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 7px black;
     background-color: rgb(0, 61, 125);
+    height: 28vw;
 }
 
 .design {
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 7px black;
     background-color: rgb(0, 61, 125);
+    height: 28vw;
 }
 
 .data {
@@ -511,12 +521,14 @@ p {
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 7px black;
     background-color: rgb(0, 61, 125);
+    height: 28vw;
 }
 
 .marketing {
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 7px black;
     background-color: rgb(0, 61, 125);
+    height: 28vw;
 }
 
 @media screen and (max-width: 750px) {
@@ -543,6 +555,123 @@ p {
         margin: 8px 16px;
         width: auto;
         border: 2px solid rgb(255, 255, 255);
-        box-shadow: 2px 2px 7px black;
     }
+
+    .coursesmobile h3:hover {
+        box-shadow: 2px 2px 7px black;
+        color: blue;
+    }
+
+    .coursesmobile a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/* 4th Section */
+
+.section4 {
+    background-color: rgb(0, 61, 125);
+}
+
+.section4 h2 {
+    text-align: center;
+    padding: 32px 0;
+}
+
+.thesisexhibit {
+    display: inline-flex;
+}
+
+.thesis {
+    margin: 0 24px 32px 24px;
+    width: 60%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(12, 6, 96);
+    box-shadow: 2px 2px 7px black;
+}
+
+.thesismobile {
+    display: none;
+}
+
+.thesis video {
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.thesis h3 {
+    padding: 24px 0 8px 12px;
+}
+
+.thesis p { 
+    padding: 0 8px 8px 12px;
+
+}
+.exhibit {
+    width: 40%;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 32px;
+    background-color: rgb(12, 6, 96);
+    box-shadow: 2px 2px 7px black;
+}
+
+.exhibit img {
+    border: 2px solid rgb(255, 255, 255);
+    width: 35%;
+    height: auto;
+    margin: 16px 0 16px 16px;
+    box-shadow: 2px 2px 7px black;
+}
+
+.exhibit h3 {
+    padding-bottom: 16px;
+}
+
+.fisma {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.prototype {
+    width: 65%;
+    padding-left: 16px;
+}
+
+.nowandthen {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.newyork {
+    width: 65%;
+    padding-left: 16px;
+}
+
+@media screen and (max-width: 750px) {
+        
+    .exhibit {
+        display: none;
+    }
+
+    .urban {
+        display: none;
+    }
+
+    .thesis  {
+        width: 100%;
+        height: auto;
+        margin: 0 0 32px 0;
+        border: none;
+        border-top: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    .section4 h2 {
+        font-size: 8vw;
+    }
+
+
 }
