@@ -16,7 +16,7 @@ html, body {
     height: 64px;
     display: inline-flex;
     align-items: center;
-    border-bottom: 1.5px solid white;
+    border-bottom: 2px solid black;
     background-color: white;
 }
 
@@ -113,18 +113,20 @@ li:hover {
     }
 }
 
-/* First Section */
+/* 1st Section */
 h2 {
     font-size: 3vw;
     text-transform: uppercase;
+    text-shadow: 5px 5px 7px black;
 }
 
 h3 {
     font-size: 2vw;
+    text-shadow: 5px 5px 7px black;
 }
 
 p {
-    font-size: 1vw;    
+    font-size: 1.25vw;    
 }
 
 .section1 {
@@ -238,13 +240,14 @@ p {
     }
 }
 
-/* Second Section */
+/* 2nd Section */
 
 .section2 {
     width: 100%;
     display: inline-flex;
     flex-direction: row;
     background-color: rgb(0, 61, 125);
+    border-bottom: 5px solid white;
 }
 
 .practice {
@@ -375,9 +378,7 @@ p {
         display: inline-flex;
         flex-direction: column;
         width: 100%;
-        margin: 0 16px;
-        margin-top: 16px;
-        margin-bottom: 32px;
+        margin: 16px 16px 32px 16px;
         border: 2px solid rgb(255, 255, 255);
     }
 
@@ -443,3 +444,105 @@ p {
     }
 }
 
+/* 3rd Section */
+
+.section3 {
+    background-color: rgb(12, 6, 96);
+}
+
+.section3 h2 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.section3 h3 {
+    padding: 0 16px;
+    padding-top: 16px;
+}
+
+.section3 p {
+    padding: 16px 16px;
+}
+
+.courses {
+    display: grid;
+    padding: 32px 72px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.coursesmobile {
+    display: none;
+}
+
+.courses img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid white;
+}
+
+.software {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px black;
+    background-color: rgb(0, 61, 125);
+    height: 28vw;
+}
+
+.computer {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px black;
+    background-color: rgb(0, 61, 125);
+}
+
+.design {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px black;
+    background-color: rgb(0, 61, 125);
+}
+
+.data {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px black;
+    background-color: rgb(0, 61, 125);
+    height: 28vw;
+}
+
+.business {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px black;
+    background-color: rgb(0, 61, 125);
+}
+
+.marketing {
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px black;
+    background-color: rgb(0, 61, 125);
+}
+
+@media screen and (max-width: 750px) {
+    .courses {
+        display: none;
+    }
+
+    .section3 h2 {
+        font-size: 8vw;
+    }
+
+    .coursesmobile {
+        background-color: rgb(12, 6, 96);
+        display: block;
+        flex-direction: column;
+        padding: 16px 16px 32px 16px;
+    }
+
+    .coursesmobile h3 {
+        background-color: rgb(0, 61, 125);
+        text-align: left;
+        padding: 16px;
+        font-size: 4vw;
+        margin: 8px 16px;
+        width: auto;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 2px 2px 7px black;
+    }
+}
