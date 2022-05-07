@@ -573,6 +573,7 @@ p {
 
 .section4 {
     background-color: rgb(0, 61, 125);
+    border-bottom: 5px solid white;
 }
 
 .section4 h2 {
